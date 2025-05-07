@@ -1,11 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, inject ,OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+interface Flight {
+  id: number;
+  airline: string;
+  time: string;
+  price: number;
+}
+
 
 @Component({
   selector: 'app-booking',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './booking.component.html',
-  styleUrl: './booking.component.css'
+  styleUrls: ['./booking.component.css']
 })
-export class BookingComponent {
+export class BookingComponent implements OnInit {
+  from: string = '';
+  to: string = '';
+  date: string = '';
+  flights: Flight[] =  [];
 
+  private route = inject(ActivatedRoute);
+
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.from = params['from'];
+      this.to = params['to'];
+      this.date = params['date'];
+
+      // Replace this with API data later
+      this.flights = [
+        { airline: 'SkyJet', price: 220,time: '10:30 AM', id: 1 },
+        { airline: 'AirCloud', price: 180,time: '02:15 9M', id: 2 }
+      ];
+    });
+  }
 }
