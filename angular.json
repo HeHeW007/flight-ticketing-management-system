@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
+
     "flight-booking-app": {
       "projectType": "application",
       "schematics": {},
-=======
+
     "admin-dashbored": {
       "projectType": "application",
       "schematics": {
@@ -15,7 +15,7 @@
           "style": "scss"
         }
       },
->>>>>>> feature/admin-dashboard
+
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,21 +23,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-<<<<<<< HEAD
+
             "outputPath": "dist/flight-booking-app",
-=======
+
             "outputPath": "dist/admin-dashbored",
->>>>>>> feature/admin-dashboard
+
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-<<<<<<< HEAD
-=======
+
             "inlineStyleLanguage": "scss",
->>>>>>> feature/admin-dashboard
+
             "assets": [
               {
                 "glob": "**/*",
@@ -45,11 +44,11 @@
               }
             ],
             "styles": [
-<<<<<<< HEAD
+
               "src/styles.css"
             ],
             "scripts": [],
-=======
+
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -88,7 +87,7 @@
               }
             ],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
->>>>>>> feature/admin-dashboard
+
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -114,7 +113,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-<<<<<<< HEAD
+
               "sourceMap": true,
               "fileReplacements": [
                 {
@@ -122,9 +121,9 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
-=======
+
               "sourceMap": true
->>>>>>> feature/admin-dashboard
+
             }
           },
           "defaultConfiguration": "production"
@@ -133,17 +132,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-<<<<<<< HEAD
+
               "buildTarget": "flight-booking-app:build:production"
             },
             "development": {
               "buildTarget": "flight-booking-app:build:development"
-=======
+
               "buildTarget": "admin-dashbored:build:production"
             },
             "development": {
               "buildTarget": "admin-dashbored:build:development"
->>>>>>> feature/admin-dashboard
+
             }
           },
           "defaultConfiguration": "development"
@@ -159,10 +158,10 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-<<<<<<< HEAD
-=======
+
+
             "inlineStyleLanguage": "scss",
->>>>>>> feature/admin-dashboard
+
             "assets": [
               {
                 "glob": "**/*",
@@ -170,12 +169,12 @@
               }
             ],
             "styles": [
-<<<<<<< HEAD
+
               "src/styles.css"
             ],
             "scripts": []
           }
-=======
+
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
@@ -205,17 +204,17 @@
               "browserTarget": "admin-dashbored:build:production"
             }
           }
->>>>>>> feature/admin-dashboard
+
         }
       }
     }
   },
   "cli": {
-<<<<<<< HEAD
+
     "analytics": "3c3a58c1-32ac-4c31-aa41-ba9a5c29b66a"
   }
 }
-=======
+
     "schematicCollections": [
       "@ionic/angular-toolkit"
     ]
@@ -229,4 +228,4 @@
     }
   }
 }
->>>>>>> feature/admin-dashboard
+
